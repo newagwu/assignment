@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    background-color: lightgray;
+}
+
+.header {
+    position: sticky;
+    top: 0%;
+}
+
+.navbar {
+    display: inline-block;
+    margin: auto;
+    padding: 0px 100px 0px 100px;
+    background-color: lightgray;
+}
+
+div {
+    display: inline-block;
+    margin: 0px 20px 20px;
+    position: relative;
+    top: 100%;
+    background-color: lightgray;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+.exp:hover {
+    cursor: pointer;
+    background-color: #3e8e41;
+    transition: 0.3s ease-out;
+}
+
+.cont:hover {
+    cursor: pointer;
+    background-color: #3e8e41;
+    transition: 0.3s ease-out;
+}
+
+.work:hover {
+    cursor: pointer;
+    background-color: #3e8e41;
+    transition: 0.3s ease-out;
+}
+
+.photo:hover {
+    cursor: pointer;
+    background-color: #3e8e41;
+    transition: 0.3s ease-out;
+}
+
+.exp {
+    padding: 0px 60px 10px 30px;
+    margin: 0%;
+    position: relative;
+    border: tomato solid;
+}
+
+.cont {
+    padding: 0px 60px 10px 60px;
+    margin: 0%;
+    position: relative;
+    border: tomato solid;
+}
+
+.work {
+    padding: 0px 60px 10px 60px;
+    margin: 0%;
+    position: relative;
+    border: tomato solid;
+}
+
+.photo {
+    padding: 0px 20px 10px 40px;
+    margin: 0%;
+    position: relative;
+    border: tomato solid;
+}
+
+ul {
+    list-style-type: none;
+    background-color: lightgray;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+    text-align: center;
+
+}
+
+.cont:hover>ul {
+    transform: translateY(0%);
+}
+
+.exp:hover>ul {
+    transform: translateY(0%);
+}
+
+.work:hover>ul {
+    transform: translateY(0%);
+}
+
+.photo:hover>ul {
+    transform: translateY(0%);
+}
+
+#profile img {
+    border-radius: 60%;
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+}
+
+div#profile {
+    background-color: lightgray;
+    position: relative;
+    top: 0%;
+    padding: 0px;
+    ;
+    display: flex;
+    float: right;
+}
+
+#num:hover {
+    background-color: antiquewhite;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+#num {
+    color: black;
+    border: tomato solid;
+    padding: 10px;
+}
+
+.side {
+    display: block;
+    position: relative;
+    z-index: -2;
+}
+
+p {
+    padding: 20px 0px 0px 0px;
+}
+
+.main {
+    background-color: lightgrey;
+    position: relative;
+    z-index: -2;
+    text-align: center;
+    color: tomato;
+    padding: 137px;
+}
+
+.footer {
+    position: absolute;
+    padding: 0px 20px 0px 20px;
+    bottom: 0;
+    background-color: lightgray;
+}
+
+@media screen and (max-width: 900px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: lightblue;
+    }
+
+    div {
+        background-color: lightblue;
+    }
+
+    .navbar {
+        display: block;
+        background-color: lightblue;
+        position: sticky;
+        top: 0%;
+    }
+
+    div#profile {
+        background-color: lightblue;
+        position: relative;
+        top: 0%;
+        padding: top 0px;
+        display: flex;
+        float: right;
+    }
+
+    li {
+        border: tomato solid;
+    }
+
+    ul {
+        background-color: lightgreen;
+        position: absolute;
+    }
+
+    .main {
+        background-color: lightblue;
+        padding: 100px 0px 0px 0px;
+    }
+
+    .exp {
+        display: block;
+        padding: 20px;
+        position: relative;
+        z-index: auto;
+        border: tomato solid;
+    }
+
+    .cont {
+        display: block;
+        padding: 20px;
+        position: relative;
+        z-index: auto;
+        border: tomato solid;
+    }
+
+    .work {
+        display: block;
+        padding: 20px;
+        position: relative;
+        z-index: auto;
+        border: tomato solid;
+    }
+
+    .photo {
+        display: block;
+        padding: 20px;
+        position: relative;
+        z-index: auto;
+        border: tomato solid;
+    }
+
+    .cont:hover>ul {
+        transform: translateY(0%);
+        z-index: 1;
+    }
+
+    .exp:hover>ul {
+        transform: translateY(0%);
+        z-index: 1;
+    }
+
+    .work:hover>ul {
+        transform: translateY(0%);
+        z-index: 1;
+    }
+
+    .photo:hover>ul {
+        transform: translateY(0%);
+        z-index: 1;
+    }
+
+    .side {
+        display: block;
+        position: relative;
+
+    }
+
+    #profile img {
+        border-radius: 60%;
+        width: 100px;
+        height: 100px;
+        object-fit: fill;
+    }
+
+    .footer {
+        display: inline-block;
+        position: sticky;
+        bottom: 0;
+        background-color: lightblue;
+    }
+}
